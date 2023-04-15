@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gardner's Guide to The Galaxy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!-- MAP STUFF USING LEAFLET -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script> -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+   />
+   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"></script>
+   <link rel="stylesheet" href="map.css" />
+    <nav class="navbar is-black">
+      <div class="container">
+        <div class="navbar-brand">
+          <!-- <a class="navbar-item" href="index.html" style="font-weight: bold">
+            <img src="media/adamlogo.png" alt="Logo">
+          </a> -->
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a href="index.html" class="navbar-item is active">Info</a>
+            <a href="home.html" class="navbar-item">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <!-- MAP DIV -->
+    <div class="marker-position">Click on map</div>
+    <div id="map"></div>
+    <script src="map.js"></script>
+  </body>
+</html>
