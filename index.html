@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gardner's Guide to The Galaxy</title>
+    <title>Adam Nolle</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <!-- MAP STUFF USING LEAFLET -->
-    <link rel="stylesheet" href="../leaflet/leaflet.css" />
-    <link rel="stylesheet" href="css/leaflet-owm.css" />
-    <link rel="stylesheet" href="css/iconLayers.css" />
-   />
-   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"></script>
-   <link rel="stylesheet" href="map.css" />
+    <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+    <link rel="shortcut icon" href="media/favicon.png"/>
+    <script src="./bouncing.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
     <nav class="navbar is-black">
       <div class="container">
         <div class="navbar-brand">
-          <!-- <a class="navbar-item" href="index.html" style="font-weight: bold">
-            <img src="media/adamlogo.png" alt="Logo">
-          </a> -->
-          </a>
           <span class="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
@@ -30,92 +30,14 @@
         </div>
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a href="index.html" class="navbar-item is active">Info</a>
-            <a href="home.html" class="navbar-item">Home</a>
+            <a href="/map stuff/apps/home.html" class="navbar-item is active">Map Information</a>
+            <a href="/index.html" class="navbar-item">Home</a>
           </div>
+        </div>
         </div>
       </div>
     </nav>
   </head>
   <body>
-    <!-- MAP DIV -->
-    <div id="map"></div>
- 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script src="../leaflet/leaflet-src.js"></script>
-    <script src="js/leaflet-owm.js"></script>
-    <script src="js/iconLayer.js"></script>
-    <script>
-        var providers = {};
-
-        providers['OSM'] = {
-            title: 'OSM',
-            icon: 'img/layers-osm.png',
-            layer: L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                maxZoom: 18,
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            })
-        };
-
-        providers['Satellite'] = {
-            title: 'MODIS',
-            icon: 'img/layers-satellite.png',
-            layer: L.tileLayer('http://{s}.sat.owm.io/sql/{z}/{x}/{y}?select=b1,b4,b3&from=modis&order=last&color=modis&appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-                maxZoom: 19,
-                attribution: '&copy; <a href="http://owm.io">VANE</a>'
-            })
-        };
-
-
-    </script>
-    <script>
-        var map = L.map('map').setView([60, 50], 3);
-
-        
-        //http://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=d9cfe451d5a775abaf178aec4951b4b0
-
-        var Temp = L.tileLayer('http://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://owm.io">VANE</a>',
-            id: 'temp'
-        }),
-
-        Precipitation = L.tileLayer('http://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://owm.io">VANE</a>'
-        }),
-
-        Wind = L.tileLayer('http://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://owm.io">VANE</a>'
-        }),
-
-        Pressure = L.tileLayer('http://tile.openweathermap.org/map/pressure_new/{z}/{x}/{y}.png?appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://owm.io">VANE</a>'
-        }),
-
-
-        Clouds = L.tileLayer('http://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=d22d9a6a3ff2aa523d5917bbccc89211', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="http://owm.io">VANE</a>'
-        });
-
-        var owm = new L.OWMLayer({key: 'b1b15e88fa797225412429c1c50c122a1'});
-        map.addLayer(owm);
-
-        Temp.addTo(map);
-
-        var overlays = {"Temperature": Temp, "Precipitation": Precipitation, "Clouds": Clouds, "Pressure": Pressure, "Wind": Wind};
-        L.control.layers(overlays, null, {collapsed:false}).addTo(map);
-
-        var layers = [];
-            for (var providerId in providers) {
-                layers.push(providers[providerId]);
-            }
-
-        L.control.iconLayers(layers).addTo(map);
-    </script>
   </body>
 </html>
