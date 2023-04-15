@@ -6,6 +6,7 @@ This couldn't be done on such a short time window for Pickhacks 2023 without usi
 
 1. [Georgy Potapov](https://github.com/Godnik)
 2. [Grzegorz Tomicki](https://github.com/tomickigrzegorz)
+3. [dmarcs](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals/commits?author=dmarcs)
 
 # Documentation
 
@@ -15,6 +16,10 @@ This couldn't be done on such a short time window for Pickhacks 2023 without usi
 2. [Open Weather Map]()https://openweathermap.org/
 3. [OpenStreetMap](https://www.openstreetmap.org/)
 4. [Bulma CSS](https://bulma.io/)
+
+## Interactive Map Of The US
+
+Using code from the [Github repo](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals)
 
 ## New Map Credits - Map Stuff Folder
 
