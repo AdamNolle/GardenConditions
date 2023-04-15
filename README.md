@@ -5,7 +5,7 @@
 This couldn't be done on such a short time window for Pickhacks 2023 without using the great work of previously existing Github projects. I explain their use below but I will credit the users here as well to make sure there is no missed recognition.
 
 1. [Georgy Potapov](https://github.com/Godnik)
-2. [tomickigrzegorz](https://github.com/tomickigrzegorz)
+2. [Grzegorz Tomicki](https://github.com/tomickigrzegorz)
 
 # Documentation
 
