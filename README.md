@@ -1,4 +1,4 @@
-# Gardner's Guide To The Galaxy
+# Greenhorns Guide To Gardening
 
 # Acknowledgments!!!!
 
@@ -19,7 +19,7 @@ This couldn't be done on such a short time window for Pickhacks 2023 without usi
 
 ## Interactive Map Of The US
 
-Using code from the [Github repo](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals)
+Using code from the [Github repo](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals) we change the data attributes to suit our needs better for this project. But the funtionailty of the app goes almost soley to [dmarcs](https://github.com/WebsiteBeaver/interactive-and-responsive-svg-map-of-us-states-capitals/commits?author=dmarcs)
 
 ## New Map Credits - Map Stuff Folder
 
