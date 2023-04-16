@@ -22,6 +22,10 @@
     <nav class="navbar is-black">
       <div class="container">
         <div class="navbar-brand">
+          <a class="navbar-item" href="/index.html" style="font-weight: bold">
+            <img src="/media/logo.png" alt="Logo">
+          </a>
+          </a>
           <span class="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
@@ -31,42 +35,47 @@
         <div id="navMenu" class="navbar-menu">
           <div class="navbar-end">
             <a href="vismap/apps/home.html" class="navbar-item">Map Information</a>
-            <a href="index.html" class="navbar-item">Home</a>
+            <a href="index.html" class="navbar-item">State Information</a>
             <a href="grow.html" class="navbar-item is active">What can I grow?</a>
+            <a href="art.html" class="navbar-item">Art!</a>
           </div>
         </div>
         </div>
       </div>
     </nav>
   </head>
-  <body>
+  <body style="background-color:black">
+    <div style="background-color:black">
+      <img src="media/profile.png" alt="art" class="center" >
+    </div>
     <!-- hot, cool, temperate -->
     <!-- rainfall: high, low, medium -->
-        <h1 class="title">What can grow in this temperature?</h1>
+        <h1 class="title has-text-white">What can grow in this temperature?</h1>
         <article class="message is-info">
           <div class="message-header">
             <p>Cool</p>
             <button class="delete" aria-label="delete"></button>
           </div>
           <div class="message-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+            In a cool climate, where temperatures tend to be lower and frost may occur, it's important to select plants that are adapted to cooler temperatures and shorter growing seasons. Hardy perennials like hostas, astilbes, and ferns are well-suited for cool climates and can provide lush foliage throughout the growing season. Spring-flowering bulbs such as tulips, daffodils, and hyacinths can add bursts of color to cool climate gardens early in the season. Leafy greens like spinach, lettuce, and kale are also excellent choices for cool climates, as they can tolerate cooler temperatures and provide fresh, nutritious greens for salads and cooking. Rhododendrons, azaleas, and camellias are flowering shrubs that thrive in cooler climates, adding beauty and charm to gardens. Additionally, cool climate gardens can benefit from the use of cold-hardy herbs like thyme, sage, and rosemary, which can provide flavorful herbs for culinary use. When planning a garden in a cool climate, it's essential to choose plants that can tolerate lower temperatures and potentially frosty conditions to ensure a successful and thriving garden.
           </div>
         </article>
           <article class="message is-success">
-            <div class="message-header">
-              <p>Temperate</p>
-              <button class="delete" aria-label="delete"></button>
+              <div class="message-header">
+                <p>Temperate</p>
+                <button class="delete" aria-label="delete"></button>
+              </div>
+            <div class="message-body">
+              In a temperate climate, which typically experiences moderate temperatures with distinct seasons, there are a wide range of plants that can flourish. Trees such as maple, oak, and birch are commonly found in temperate climates and provide beautiful foliage displays during fall. Flowering plants such as roses, lilies, and daffodils are also popular choices for temperate climates, adding bursts of color to gardens during the warmer months. Vegetables like tomatoes, lettuce, and carrots can be successfully grown in temperate climates, providing fresh produce for home gardens. Additionally, herbs such as parsley, chives, and mint thrive in temperate climates, making them great additions to culinary gardens. Overall, a diverse array of plants can thrive in temperate climates, allowing for a visually appealing and productive garden throughout the seasons.
             </div>
-          <div class="message-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
+          </article>
           <article class="message is-warning">
             <div class="message-header">
               <p>Warm</p>
               <button class="delete" aria-label="delete"></button>
             </div>
             <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              In a warm climate, where temperatures may be high but not excessively hot, there are a wide variety of plants that can thrive. Some options include tropical and subtropical plants, as well as those that are adapted to Mediterranean or desert-like climates. Palms, such as coconut palms or date palms, are often associated with warm climates and can provide a tropical feel to your garden. Bougainvillea, with its vibrant-colored flowers, is a popular choice in warm climates due to its heat tolerance and drought resistance. Citrus trees, such as oranges, lemons, and limes, are also well-suited for warm climates, providing not only decorative appeal but also delicious fruits. Additionally, herbs like rosemary, basil, and thyme are commonly grown in warm climates, adding culinary value to your garden. Overall, selecting plants that are adapted to warmer temperatures will help ensure a successful and thriving garden in a warm climate.
             </div>
           </article>
           <article class="message is-danger">
@@ -75,18 +84,32 @@
               <button class="delete" aria-label="delete"></button>
             </div>
             <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              In a hot climate, it's important to choose plants that are adapted to withstand high temperatures and low water availability. Succulents, such as cacti and agave, are ideal for hot climates as they are designed to store water in their leaves, stems, and roots, allowing them to thrive in arid conditions. Cacti, with their unique shapes and sizes, can add an interesting visual element to your garden while being low-maintenance. Sunflowers are another great option for hot climates, known for their vibrant flowers and ability to tolerate heat and full sun. For edible options, heat-resistant tomato varieties like Roma or Celebrity, as well as vegetables like okra and peppers, are suitable for hot climates. These plants can provide a bountiful harvest while withstanding the challenging conditions of a hot climate.
             </div>
           </article>
 
-        <h1 class="title">What can grow with this rainfall?</h1>
+        <h1 class="title has-text-white">What can grow with this rainfall?</h1>
         <article class="message is-danger">
           <div class="message-header">
             <p>High</p>
             <button class="delete" aria-label="delete"></button>
           </div>
           <div class="message-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+            In an area with higher rainfall, it's important to choose plants that are well-adapted to moist conditions and can thrive in wetter environments. Here are some plant options that are suitable for areas with higher rainfall:
+
+            Ferns: Ferns are known for their lush, green foliage and can thrive in areas with higher rainfall due to their preference for moist and shaded environments. They make excellent choices for shady spots in gardens or under trees where the soil tends to stay moist.
+            
+            Hostas: Hostas are perennial plants that are well-suited for areas with higher rainfall as they prefer moist soil. They come in a wide variety of sizes and leaf colors, making them popular choices for adding texture and color to gardens.
+            
+            Hydrangeas: Hydrangeas are flowering shrubs that are known for their large, colorful blooms. They are well-suited for areas with higher rainfall as they prefer consistently moist soil. Hydrangeas can add a splash of color to gardens and are often used in borders or as focal points in landscapes.
+            
+            Daylilies: Daylilies are hardy perennials that can tolerate higher rainfall as they have a fibrous root system that helps them absorb moisture. They come in a wide range of colors and bloom throughout the summer, making them a popular choice for adding pops of color to gardens.
+            
+            Bog plants: Bog plants, such as cattails, irises, and pitcher plants, are specifically adapted to thrive in wet or marshy areas. They can tolerate higher rainfall and can add unique and interesting elements to water gardens or areas with consistently moist soil.
+            
+            Rain garden plants: Rain garden plants, such as Joe-Pye weed, swamp milkweed, and cardinal flower, are specifically chosen for their ability to thrive in areas with higher rainfall. They are designed to absorb excess water and can help manage water runoff while providing beautiful blooms and foliage.
+            
+            When gardening in an area with higher rainfall, it's important to choose plants that are well-adapted to wet conditions and can thrive in consistently moist soil. Proper drainage and soil preparation may also be necessary to ensure optimal growth and health of the plants.
           </div>
         </article>
         <article class="message is-success">
@@ -95,8 +118,21 @@
               <button class="delete" aria-label="delete"></button>
             </div>
           <div class="message-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-          </div>
+            In an area with medium rainfall, it's possible to grow a wide range of plants that can tolerate moderate levels of moisture without being overly waterlogged. Here are some options:
+
+Native plants: Native plants are well-adapted to the local climate and often require less maintenance and watering. Look for native species of flowers, grasses, shrubs, and trees that are adapted to the average rainfall in your area. They can provide habitat for local wildlife and help support the ecosystem.
+
+Drought-tolerant plants: Even in areas with medium rainfall, it's a good idea to include some drought-tolerant plants in your garden. These plants are adapted to periods of low rainfall and can thrive with less water. Examples include succulents, such as sedums and agaves, as well as certain species of lavender, yarrow, and Russian sage.
+
+Mediterranean plants: Many plants native to Mediterranean regions are well-suited for areas with medium rainfall, as they are adapted to periods of both drought and moderate moisture. Examples include rosemary, lavender, thyme, and sage, which can provide aromatic foliage, colorful flowers, and culinary uses.
+
+Ornamental grasses: Many types of ornamental grasses are well-suited for areas with medium rainfall, as they have deep root systems that can access moisture at lower soil levels. They can provide attractive foliage, add texture to the garden, and require minimal watering once established. Examples include miscanthus, fountain grass, and switchgrass.
+
+Fruit trees: Fruit trees such as apple, cherry, and pear can often thrive in areas with medium rainfall, as they are adapted to a wide range of moisture levels. They can provide not only delicious fruit but also beautiful flowers and foliage, making them a functional and aesthetic addition to gardens.
+
+Vegetables and herbs: Many common vegetables and herbs can be grown in areas with medium rainfall, provided they are properly irrigated during dry spells. Examples include tomatoes, peppers, cucumbers, basil, thyme, and parsley, which can be grown in vegetable gardens or herb beds and provide fresh produce for culinary use.
+
+When gardening in an area with medium rainfall, it's important to consider the specific water needs of different plant species and provide appropriate irrigation during drier periods. Proper soil preparation, mulching, and watering practices can help ensure successful plant growth and optimize water usage in the garden.
         </article>
           <article class="message is-warning">
             <div class="message-header">
@@ -104,7 +140,21 @@
               <button class="delete" aria-label="delete"></button>
             </div>
             <div class="message-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+              In an area with low rainfall, it's important to choose plants that are drought-tolerant and can thrive with minimal water. Here are some plant options that are suitable for areas with low rainfall:
+
+Succulents: Succulents are known for their ability to store water in their leaves, stems, and roots, making them well-adapted to dry conditions. Examples of succulents include cacti, aloe vera, and sedums, which can add unique and interesting forms to gardens while requiring minimal water.
+
+Mediterranean plants: Many plants native to Mediterranean regions are well-suited for areas with low rainfall, as they are adapted to hot and dry climates. Examples include lavender, rosemary, thyme, and sage, which can provide aromatic foliage, colorful flowers, and culinary uses.
+
+Native drought-tolerant plants: Look for native plant species that are adapted to the local climate and require less water. These plants are typically well-suited to low rainfall areas and can provide habitat for local wildlife. Examples may include yuccas, agaves, and certain species of grasses and wildflowers.
+
+Xeriscaping plants: Xeriscaping is a landscaping approach that focuses on using plants that require minimal water. Many xeriscaping plants are adapted to dry conditions and can thrive in areas with low rainfall. Examples include ornamental grasses, yuccas, succulents, and drought-tolerant wildflowers.
+
+Mediterranean fruit trees: Some fruit trees that are native to Mediterranean regions, such as olive and fig trees, can tolerate low rainfall and thrive in drier conditions. These trees can provide not only fruit but also unique and attractive foliage, making them a functional and aesthetic addition to gardens.
+
+Rock garden plants: Rock gardens are a popular landscaping option for areas with low rainfall, as they often incorporate drought-tolerant plants that can thrive in rocky, well-draining soils. Examples of rock garden plants include sedums, yuccas, and certain species of cacti and succulents.
+
+When gardening in an area with low rainfall, it's important to choose plants that are adapted to dry conditions and require minimal water. Proper soil preparation, mulching, and watering practices, such as watering deeply and infrequently, can help ensure the survival and success of drought-tolerant plants in the garden while conserving water resources.
             </div>
           </article>
   </body>
